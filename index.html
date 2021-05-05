@@ -61,12 +61,46 @@
             <button class="button button-link-active" type="button">
               <span class="button-text" data-modal-open> Заказать услугу</span>
             </button>
-
             <div class="backdrop is-hidden" data-modal>
               <div class="modal">
                 <svg class="close-icon" data-modal-close width="18" height="18">
                   <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
+                <form>
+                  <p class="form-title">
+                    Оставьте свои данные, мы вам перезвоним
+                  </p>
+                  <label for="name">Имя</label>
+                  <input id="name" type="text" />
+                  <svg width="18" height="18">
+                    <use
+                      href="./images/symbol-defs.svg#icon-person-black"
+                    ></use>
+                  </svg>
+                  <label for="telephone">Телефон</label>
+                  <input id="telephone" type="tel" />
+                  <svg width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                  </svg>
+                  <label for="mail">Почта</label>
+                  <input id="mail" type="mail" />
+                  <svg width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                  </svg>
+                  <label for="comment">Комментарий</label>
+                  <textarea
+                    name=""
+                    id="comment"
+                    cols="20"
+                    rows="10"
+                    placeholder="Введите текст"
+                  ></textarea>
+                  <label for="checkbox"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a href="">Условия договора</a></label
+                  >
+                  <input type="checkbox" />
+                </form>
               </div>
             </div>
           </div>
@@ -82,7 +116,6 @@
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-
               <h3 class="section-title">Внимание к деталям</h3>
               <p class="section-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -502,6 +535,25 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="mailing">
+            <label class="footer-mailing" for="send"
+              >Подпишитесь на рассылку
+            </label>
+            <form>
+              <input
+                class="input-email"
+                type="email"
+                placeholder="E-mail"
+                id="send"
+              />
+              <button class="button-footer" type="submit">
+                <span class="btn-text">Подписаться</span>
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
