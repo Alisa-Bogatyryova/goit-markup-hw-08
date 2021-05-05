@@ -133,6 +133,7 @@ img {
 /*Ссылки*/
 .link:visited {
   color: currentColor;
+  color: none;
 }
 
 .link {
