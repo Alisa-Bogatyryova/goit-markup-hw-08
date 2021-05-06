@@ -201,11 +201,22 @@ img {
   position: absolute;
   left: 100%;
   bottom: 100%;
-  transform: translate(-160%, 140%);
+  transform: translate(-160%, 120%);
   display: block;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.icon-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.close-icon:hover .icon-close {
+  fill: var(--button-color);
 }
 /*Форма*/
 .form-title {
@@ -254,26 +265,30 @@ img {
   resize: none;
 }
 .form-label-check {
-  margin-left: 37px;
+  padding-left: 37px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-color);
 }
+.checkbox {
+  padding-right: 14px;
+}
 .conditions {
   text-decoration-line: underline;
   color: var(--button-color);
 }
-.form-field .checkbox {
+.checkbox {
   position: relative;
-  margin-left: 14px;
 }
+
 .form-icon-check {
   position: absolute;
   top: 4px;
+  transform: translate(10px, 0px);
+  pointer-events: none;
   width: 16px;
   height: 15px;
-  margin-left: 14px;
   border: 2px solid var(--secondary-color);
   border-radius: 2px;
   fill: var(--white-color);
