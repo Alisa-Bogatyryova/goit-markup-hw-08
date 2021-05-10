@@ -1,0 +1,26 @@
+.logo {
+  margin-right: 93px;
+  color: $button-color;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.94;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer__logo {
+  color: $white-color;
+}
+.logo__item {
+  color: #000000;
+}
+.logo__item--footer {
+  color: $white-color;
+}
+.logo---footer {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 0;
+  color: $button-color;
+}
