@@ -95,10 +95,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .modal__close:hover & {
+    fill: $button-color;
+  }
 }
-.modal__close:hover .modal__close-icon {
-  fill: $button-color;
-}
+
 /*Форма*/
 .form__title {
   margin: 40px 40px 12px 40px;
@@ -129,6 +130,10 @@
   top: 24px;
   left: 14px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .form__input:focus ~ &,
+  .form__input:hover ~ & {
+    fill: $button-color;
+  }
 }
 .form__input {
   padding-left: 42px;
@@ -137,6 +142,11 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    border-color: $button-color;
+    cursor: pointer;
+  }
 }
 .form__comment {
   width: 448px;
@@ -180,15 +190,7 @@
   fill: $button-color;
   border: none;
 }
-.form__input:focus,
-.form__input:hover {
-  border-color: $button-color;
-  cursor: pointer;
-}
-.form__input:focus ~ .form__icon,
-.form__input:hover ~ .form__icon {
-  fill: $button-color;
-}
+
 textarea::placeholder {
   padding: 12px 16px;
   font-size: 14px;

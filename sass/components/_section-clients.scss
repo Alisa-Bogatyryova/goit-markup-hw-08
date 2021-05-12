@@ -17,21 +17,22 @@
   justify-content: center;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid $button-color;
+    cursor: pointer;
+  }
 }
 .section-client__item:last-child {
   margin-right: 0;
 }
-.section-client__link:hover,
-.section-client__link:focus {
-  border: 1px solid $button-color;
-  cursor: pointer;
-}
+
 .section-client__logo {
   display: block;
   fill: $icon-color;
-}
-.section-client__link:hover .section-client__logo,
-.section-client__link:focus .section-client__logo {
-  fill: $button-color;
-  cursor: pointer;
+  .section-client__link:hover &,
+  .section-client__link:focus & {
+    fill: $button-color;
+    cursor: pointer;
+  }
 }
