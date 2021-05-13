@@ -18,9 +18,9 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-right: 30px;
-}
-.section-works__image:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .section-works__text {

@@ -21,9 +21,9 @@
   margin-bottom: 9px;
   color: $white-color;
   font-style: normal;
-}
-.address-list__item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .address-list__address {
   font-size: 14px;
