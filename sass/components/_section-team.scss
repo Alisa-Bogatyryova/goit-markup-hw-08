@@ -63,6 +63,7 @@
   }
 }
 .card__item {
+  width: 100%;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: 354px;
@@ -86,9 +87,11 @@
   border-radius: 0px 0px 4px 4px;
 }
 .card__tumb {
+  width: 100%;
   align-items: center;
 }
 .card__content {
+  width: 100%;
   background-color: $white-color;
 }
 .card__team-position {
