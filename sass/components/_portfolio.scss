@@ -1,9 +1,17 @@
 .filter {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-  list-style: none;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 /*Копки-фильтры*/
@@ -31,6 +39,10 @@
     color: $white-color;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .card-menu__title {
@@ -53,13 +65,8 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  min-width: 100%;
 }
 .card-menu__item {
-  width: 370px;
-  height: 404px;
-  margin-right: 30px;
-  margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -67,12 +74,33 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 404px;
+  }
 }
 
-.card-menu__item:nth-child(3n + 3) {
-  margin-right: 0;
-  margin-bottom: 0;
+.card-menu__item:nth-child(2n) {
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
+.card-menu__item:nth-child(3n + 3) {
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
 .card-menu__link {
   text-decoration: none;
   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1),
