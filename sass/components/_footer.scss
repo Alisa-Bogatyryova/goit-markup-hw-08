@@ -176,6 +176,12 @@
   background-color: $background-color;
   border-radius: 4px;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 350px;
     margin-bottom: 0;

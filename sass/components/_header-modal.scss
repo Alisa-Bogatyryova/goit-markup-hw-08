@@ -23,6 +23,7 @@
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
   opacity: 0;
@@ -43,7 +44,6 @@
 
 .header-modal__nav {
   list-style: none;
-  margin-bottom: 302px;
 }
 .header-modal__list:not(:first-child) {
   margin-top: 32px;
@@ -72,7 +72,7 @@
   width: 100%;
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.175;
+  line-height: 1.17;
   color: $button-color;
 }
 
@@ -109,6 +109,7 @@
 
 .header-modal__social-link {
   font-weight: 500;
+  text-decoration: none;
   font-size: 18px;
   line-height: 1.22;
   margin-top: 64px;
